@@ -2,193 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Case 1 (Using Absolute & Relative)</title>
-    <link href="assets/css/normalize.css" rel="stylesheet">
+    <title>Case04</title>
     <style>
-
-        body > section {
-            width: 50vw;
-            height: 50vh;
-            position: absolute;
+        body section {
+            height: 800px;
         }
 
-        body > section:nth-child(1) {
-            background: red;
-            left: 0;
-            top: 0;
-        }
 
-        body > section:nth-child(2) {
-            background: green;
-            right: 0;
-            top: 0;
-        }
 
-        body > section:nth-child(3) {
-            background: orange;
-            bottom: 0;
-            left: 0;
-        }
-
-        body > section:nth-child(4) {
-            background: deeppink;
-            right: 0;
-            bottom: 0;
-        }
-
-        body > div {
-            background: white;
-            width: 150px;
-            height: 150px;
-            position: absolute;
-            z-index: 2;
-
-        }
-
-        body > div:nth-child(5) {
+        body section:nth-child(1)>h1{
+            color: white;
+            font-size: 40px;
+            font-family: 'OpenSymbol',Carlito,serif;
+            position: sticky;
             top: 0;
             left: 0;
-            border-bottom-right-radius: 100%;
-
+            height: 50px;
+            margin: 0;
+            background-color: #ff4600;
         }
 
-        body > div:nth-child(6) {
-            right: 0;
+        body section:nth-child(1){
+            background-color: white;
+        }
+        body section:nth-child(1) div h1{
+            color: black;
+            font-size: 180px;
+            font-family: 'OpenSymbol',Carlito,serif;
+            margin-left: 500px;
+            margin-top: 250px;
+        }
+
+
+
+        body section:nth-child(2)>h1{
+            color: white;
+            font-size: 40px;
+            font-family: 'OpenSymbol',Carlito,serif;
+            position: sticky;
             top: 0;
-            border-bottom-left-radius: 100%;
-        }
-
-        body > div:nth-child(7) {
             left: 0;
-            bottom: 0;
-            border-top-right-radius: 100%;
+            height: 50px;
+            margin: 0;
+            background-color: #0000ff;
         }
 
-        body > div:nth-child(8) {
-            right: 0;
-            bottom: 0;
-            border-top-left-radius: 100%;
+        body section:nth-child(2){
+            background-color: #3f69b8;
+        }
+        body section:nth-child(2) div h1{
+            color: black;
+            font-size: 180px;
+            font-family: 'OpenSymbol',Carlito,serif;
+            margin-left: 500px;
+            margin-top: 250px;
         }
 
-        body > div:nth-child(9) {
-            width: 200px;
-            height: 200px;
-            right: 0;
-            bottom: 0;
-            left: 0;
+
+        body section:nth-child(3)>h1{
+            color: white;
+            font-size: 40px;
+            font-family: 'OpenSymbol',Carlito,serif;
+            position: sticky;
             top: 0;
-            margin: auto;
-            /*transform: rotate(97deg);*/
+            left: 0;
+            height: 50px;
+            margin: 0;
+            background-color: black;
+        }
+        body section:nth-child(3){
+            background-color: #807b7b;
+        }
+        body section:nth-child(3) div h1{
+            color: black;
+            font-size: 180px;
+            font-family: 'OpenSymbol',Carlito,serif;
+            margin-left: 500px;
+            margin-top: 250px;
         }
 
-        body > div > div {
-            width: 120px;
-            height: 120px;
-            border: 2px solid red;
-            background: red;
-            border-radius: 100%;
-            position: absolute;
-            right: 0;
+
+
+        body section:nth-child(4)>h1{
+            color: white;
+            font-size: 40px;
+            font-family: 'OpenSymbol',Carlito,serif;
+            position: sticky;
             top: 0;
-            bottom: 0;
             left: 0;
-            margin: auto;
+            height: 50px;
+            margin: 0;
+            background-color: #760000;
         }
-
-        body > div:nth-child(10) {
-            left: 0;
-            right: 0;
-            top: 0;
-            margin: auto;
-            border-bottom-left-radius: 108px;
-            border-bottom-right-radius: 108px;
-            width: 200px;
-            height: 100px;
+        body section:nth-child(4){
+            background-color: #ff0000;
         }
-
-        body > div:nth-child(11) {
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            width: 200px;
-            height: 100px;
-            border-top-left-radius: 108px;
-            border-top-right-radius: 108px;
+        body section:nth-child(4) div h1{
+            color: black;
+            font-size: 180px;
+            font-family: 'OpenSymbol',Carlito,serif;
+            margin-left: 500px;
+            margin-top: 250px;
         }
+    </style>
+</head>
+<body>
 
-        section > div {
-            width: 200px;
-            height: 200px;
-            background: white;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            border-radius: 100%;
-        }
+<section>
+    <h1>Card 1</h1>
+    <div><h1>Hello</h1></div>
+</section>
+<section>
+    <h1>Card 2</h1>
+    <div><h1>How</h1></div>
+</section>
+<section>
+    <h1>Card 3</h1>
+    <div><h1>Are</h1></div>
+</section>
+<section>
+    <h1>Card 4</h1>
+    <div><h1>You..?</h1></div>
+</section>
 
-        section > div > div {
-            width: 80px;
-            height: 80px;
-            background: red;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            margin:auto;
-        }
-
-        </style >
-        </head >
-        <body>
-
-
-        <section>
-         <div>
-        <div> </div>
-         </div>
-
-
-        </section>
-        <section>
-            <div>
-        <div> </div>
-
-            </div>
-
-        </section>
-        <section>
-
-             <div>
-        <div> </div>
-             </div>
-
-        </section>
-        <section>
-
-            <div>
-        <div> </div>
-            </div>
-
-        </section>
-
-        <div> </div>
-        <div> </div>
-        <div> </div>
-        <div> </div>
-
-
-        <div>
-
-        <div> </div>
-        </div >
-
-        <div> </div>
-        <div> </div>
-
-        </body >
-        </html >
+</body>
+</html>
