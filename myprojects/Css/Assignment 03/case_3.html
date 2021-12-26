@@ -1,100 +1,157 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Assignment 3</title>
-    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <style>
-        body > section {
-            width: 98vw;
+
+        body > section{
+            position: relative;
             height: 100vh;
-            position: fixed;
-        }
-
-        body > section > div {
-            width: 200px;
-            height: 200px;
-            border: 1px solid red;
-            border-radius: 200px;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 14px;
-            margin: auto;
-        }
-
-        body > section > div > h3 {
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-top: 82px;
-            font-size: 30px;
-
-        }
-
-        body > section > div > pre {
-            text-align: center;
-            margin-top: 0 ;
-            margin-bottom: 0 ;
-
-        }
-
-        body > section:nth-child(1) > div {
-             width: 200px;
-            height: 200px;
-            background-color: #632a66;
-            border-radius: 200px;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 14px;
-            margin: auto;
         }
 
 
-        body > div > div {
+        section:nth-child(1)>section:nth-child(1)>div:nth-child(1) {
             width: 250px;
             height: 250px;
-            border-radius: 250px;
-            border: 20px solid #796262;
-            position: absolute;
-            top: 0 ;
-            right: 0 ;
-            bottom: 0 ;
-            left: 0 ;
+            border-radius: 50%;
+            border: 20px solid red;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
             margin: auto;
+            z-index: 2;
+        }
+        section:nth-child(1)>section:nth-child(1)>div:nth-child(2) {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 40px solid #744c4c;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
         }
 
-        body > div > div > div {
-            width: 200px;
-            height: 200px;
-            border-radius: 200px;
-            border: 25px solid red;
+        section:nth-child(1)>section:nth-child(2)>div{
             position: absolute;
+            background-color: #794da7;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
         }
+        section:nth-child(1)>section:nth-child(2)>div>p{
+            font-family: 'OpenSymbol', OpenSymbol,serif;
+            font-size: 20px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        section:nth-child(2)>div{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: #3b5fa3;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        section:nth-child(2)>div>p{
+            font-family: 'OpenSymbol', OpenSymbol,serif;
+            font-size: 20px;
+            position: absolute;
+            width: 120px;
+            height: 20px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section:nth-child(3)>div{
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: #ac421b;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        section:nth-child(3)>div>p{
+            font-family: 'OpenSymbol', OpenSymbol,serif;
+            font-size: 20px;
+            position: absolute;
+            width: 100px;
+            height:100px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+
+
+
     </style>
 </head>
 <body>
 <section>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+
+    <section>
+        <div>
+            <p><b>Hello</b></p>
+        </div>
+    </section>
+</section>
+
+
+<section>
     <div>
-        <h3>Hello</h3>
+        <p><b>Welcome To</b></p>
     </div>
 </section>
 
 <section>
-
-</section>
-<div>
     <div>
-         <div></div>
+        <p>
+            <b> Institue
+                Of
+                Software
+                Engineering
+            </b>
+        </p>
     </div>
-</div>
+</section>
+
 </body>
 </html>

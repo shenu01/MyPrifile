@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
+
+    <style>
+        /*=======================================================================*/
+
+        /*Method One*/
+        /* section{
+             border: 20px solid #77859d;
+             border-top: 20px solid #ff025f;
+             width: 300px;
+             height: 300px;
+             border-radius: 100%;
+             background-color: #1b57a3;
+             position: absolute;
+             margin:auto;
+             left: 0;
+             right: 0;
+             top: 0;
+             bottom: 0;
+         }
+         section>h2{
+             position: absolute;
+             margin:auto;
+             left: 0;
+             right: 0;
+             top: 0;
+             bottom: 0;
+             width: max-content;
+             height: max-content;
+             color: white;
+             font-size: 30px;
+             font-family: Ubuntu;
+         }
+         section:hover{
+             transform: rotate(360deg);
+             transition: all 1s;
+             cursor: pointer;
+         }
+         section:hover h2{
+             transform: rotate(-360deg);
+             transition: all 1s;
+         }
+ */
+
+        /*=======================================================================*/
+
+        /*Method Two*/
+        section {
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background-color: #1b57a3;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        section > h2 {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: max-content;
+            height: max-content;
+            color: #ff0000;
+            font-size: 30px;
+            font-family: Ubuntu;
+            z-index: 3;
+        }
+
+
+        section::after {
+            content: " ";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 20px solid #77859d;
+            border-top: 20px solid #ff0202;
+            border-radius: 100%;
+        }
+
+        section:hover::after{
+            transform: rotate(360deg);
+            transition: all 2s;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <h2>RWAD</h2>
+
+</section>
+
+</body>
+</html>
