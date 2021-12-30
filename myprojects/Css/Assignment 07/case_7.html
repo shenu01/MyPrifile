@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 7</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+
+    <style>
+        section{
+            position: fixed;
+            height: 150px;
+            width: 300px;
+            background-color: blue;
+            border-radius:10px;
+            animation-name:flash;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+        }
+        @keyframes flash {
+            0%{
+                left: 0;
+                top: 0;
+            }
+            25%{
+                left: 1050px;
+                top: 0;
+                transform: rotate(180deg);
+                background-color: yellow;
+            }
+            50%{
+                left: 1050px;
+                top: 450px;
+                transform: rotate(360deg);
+                background-color: red;
+            }
+            75%{
+                top:450px;
+                left: 0;
+                transform: rotate(180deg);
+                background-color: purple;
+            }
+            100%{
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+<section></section>
+</body>
+</html>
