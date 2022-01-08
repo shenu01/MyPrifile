@@ -17,25 +17,27 @@ nav{
     width: 84%;
     margin: auto;
     padding: 20px 0;
-    align-items: center;
+    align-items:  inherit;
     justify-content: space-between;
 }
 
 .logo{
-    width: 100px;
+    width: 50px;
     cursor: pointer;
+    left: 0px;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 10px;
 }
 
 nav ul li a{
     text-decoration: none;
     color: #000;
     font-weight: bold;
+
 }
 
 nav ul li a:hover{
@@ -50,7 +52,7 @@ nav ul li a:hover{
 .detel h1{
     font-size: 50px;
     color: #212121;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
 
 span{
@@ -58,8 +60,8 @@ span{
 
 }
 
-.detel p{
-    color: #555;
+.detel h4{
+    color: #1e3919;
     line-height: 22px;
 }
 
@@ -78,12 +80,9 @@ span{
     position: absolute;
     width: 248px;
     height: 384px;
-    right: 0px;
+    right: 30px;
     top: 129px;
-
-
-
-    border-radius: 50px;
+    border-radius: 30px;
 
 }
 
@@ -117,4 +116,18 @@ span{
 
 .social a:hover{
     color: red;
+}
+/* I am currently learning more about software development. I have been doing two years of training with IJSE for that. I was educated up to A / L at Central College Maharagama I also have knowledge of web development, UI / UX designing, database management and frameworks. Contact me to get the service you need in these areas creatively, efficiently and cleanly. Also, if you want to receive services in a very friendly manner,contact me. */
+.About{
+
+
+
+font-family: Paytone One;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 22px;
+    right: 30px;
+    top: 129px;
+color: #030303;
 }
