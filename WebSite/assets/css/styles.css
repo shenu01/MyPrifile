@@ -87,16 +87,16 @@ span{
 }
 
 .images img{
-    height: 100%;
+    height: 120%;
     position: absolute;
     left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
+    bottom: 0px;
+    transform: translateX(-30%);
     transition: bottom 1s, left 1s;
 }
 
 .images:hover .shape{
-    bottom: 40px;
+    left: 40px;
 }
 
 .images:hover .girl{
@@ -117,17 +117,53 @@ span{
 .social a:hover{
     color: red;
 }
-/* I am currently learning more about software development. I have been doing two years of training with IJSE for that. I was educated up to A / L at Central College Maharagama I also have knowledge of web development, UI / UX designing, database management and frameworks. Contact me to get the service you need in these areas creatively, efficiently and cleanly. Also, if you want to receive services in a very friendly manner,contact me. */
+
+
+
 .About{
-
-
-
-font-family: Paytone One;
-font-style: normal;
-font-weight: normal;
-font-size: 22px;
-line-height: 22px;
-    right: 30px;
-    top: 129px;
-color: #030303;
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.About img{
+    height: auto;
+    width: 430px;
+}
+.About-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.About-text h2{
+    color: #000000;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.About-text h5{
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: #000000;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.title h3{
+    color: white;
+    font-size: 20px;
+    width: 880px;
+    margin: 30px auto;
+    text-align: center;
 }
