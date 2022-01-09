@@ -167,3 +167,362 @@ span{
     margin: 30px auto;
     text-align: center;
 }
+
+
+
+
+
+
+
+/* Skill Section Start */
+
+#class-Service {
+    /* height: 70vh; */
+    height: 230px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#slider {
+    /* background-color: red; */
+    height: 800px;
+    width: 1020px;
+    display: flex;
+    justify-content: space-around;
+    align-items: self-start;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+#slid-con-div {
+
+    width: 3000px;
+
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+    flex-basis: 1007px;
+    margin-left: 1128px;
+ align-content: baseline;
+    animation: scroll 5s linear alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes scroll {
+    from {
+        margin-left: 828px;
+    }
+    to {
+        margin-left: -821px;
+    }
+}
+
+.slid-div {
+    position: relative;
+    background: #c6c0c0;
+
+
+}
+
+
+
+.img-div {
+    height: 92px;
+    width: 92px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#img_1 {
+    background-image: url("../img/image 37.png");
+}
+
+#img_2 {
+    background-image: url("../img/image 36.png");
+}
+
+#img_3 {
+    background-image: url("../img/image 35.png");
+}
+
+#img_4 {
+    background-image: url("../img/image 38.png");
+}
+
+#img_5 {
+    background-image: url("../img/image 39.png");
+}
+
+
+
+/* Skill Section Start */
+#My-skill-EDUCATION {
+    /* height: 70vh; */
+    height: 200px;
+    background-color: #ffffff;
+    position: relative;
+}
+#second-slider {
+
+    height: 800px;
+    width: 1020px;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: self-start;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+
+#Secondslid-con-div {
+
+    width: 3000px;
+
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+    flex-basis: 1007px;
+    margin-left: 1128px;
+    align-content: baseline;
+    animation: scroll 5s linear alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes scroll {
+    from {
+        margin-left: 828px;
+    }
+    to {
+        margin-left: -821px;
+    }
+}
+
+.secondslid-div {
+    position: relative;
+    background: #c6c0c0;
+
+
+}
+
+
+
+.secondimg-div {
+    height: 92px;
+    width: 92px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#skill_1 {
+    background-image: url("../img/simple-icons_mysql.png");
+}
+
+#skill_2 {
+    background-image: url("../img/logos_java.png");
+}
+
+#skill_3 {
+    background-image: url("../img/bx_bxs-file-css.png");
+}
+
+#skill_4 {
+    background-image: url("../img/logos_python.png");
+}
+
+#skill_5 {
+    background-image: url("../img/vscode-icons_file-type-photoshop.png");
+}
+
+/* Skill Section End */
+#EDUCATION {
+    /* height: 70vh; */
+    height: 400px;
+    background-color: #ffffff;
+    position: relative;
+}
+.education{
+
+
+     /* Vector */
+
+
+}
+
+/*========================*/
+
+header{
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    left: 12%;
+    padding-top: 12px;
+}
+header h1{
+    font-size: 30px;
+}
+.empty{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
+
+.content{
+    display: flex;
+    min-height: 90vh;
+}
+.content section{
+    margin-top: 8vh;
+    margin-left: 20vh;
+}
+.content-form{
+    margin-top: 7rem;
+}
+section i{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    text-align: center;
+}
+.form{
+    display: inline-table;
+    position: absolute;
+    padding-top: 12px;
+    left: 0;
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form .contact-form input{
+    width: 30rem;
+    background-color: transparent;
+    border: 0px;
+    border: transparent;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #1f1717;
+}
+.form .contact-form input ~ span{
+    position: absolute;
+    left: 20px;
+    transition: 0.9s ease-in-out;
+    margin-top: 10px;
+}
+.form .contact-form input:focus ~span{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.form .contact-form textarea{
+    width: 30rem;
+    border: 0px;
+    background-color: transparent;
+    margin: 20px;
+    font-size: 17px;
+    border-bottom: 2px solid #d52222;
+}
+.form .contact-form textarea ~ span
+{
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+    transition: 0.9s ease-in-out;
+}
+.form .contact-form textarea:focus ~span{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+.form .contact-form input[type=submit]{
+    background-color: #c23b3b;
+    border: 2px solid #bb1b1b;
+    font-size: 18px;
+    width: 50%;
+    height: 40px;
+    margin-top: -5px;
+}
+.form .contact-form input[type=submit]:hover{
+    background-color: transparent;
+    color: #cd0000;
+}
+.media{
+    position: absolute;
+    top: 85vh;
+    right: 20vh;
+    display: flex;
+    list-style: none;
+}
+.media li{
+    margin: 20px 30px;
+}
+@media screen and (max-width: 900px){
+    body{
+        background-repeat: repeat-y;
+        overflow: auto;
+    }
+    header{
+        position: absolute;
+        left: 0;
+        top: 20%;
+        width: 100%;
+    }
+    .empty{
+        height: 210vh;
+    }
+    .form{
+        position: absolute;
+        top: 100vh;
+        margin-left: 10%;
+    }
+    .content-form{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+        margin-top: 53vh;
+        margin-left: 10vh;
+    }
+    .content section{
+        margin-top: 0vh;
+        margin-left: 0vh;
+    }
+    .media{
+        position: absolute;
+        top: 190vh;
+        right: 30px;
+    }
+}
