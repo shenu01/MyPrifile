@@ -3,28 +3,44 @@
     padding: 0;
     font-family: sans-serif;
 }
+#circle{
+    position: absolute;
+    background-color: rgba(219, 8, 8, 0.98);
+    clip-path: circle(50% at 70% 50%);
+   //transform: rotate(180deg);
+    width: 390px;
+    height: 384px;
+    right: 30px;
+    top: 129px;
+    border-radius: 30px;
+}
 
 .hero{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height:100vh;
     background: #ffffff;
-    position: relative;
+
 }
 
 nav{
     display: flex;
-    width: 84%;
     margin: auto;
     padding: 20px 0;
-    align-items:  inherit;
-    justify-content: space-between;
+    position:relative;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ff0000;
+    width: 100vw;
+    height: 50px;
+    box-shadow: 2px 4px 3px 2px darkgrey;
 }
 
 .logo{
     width: 50px;
     cursor: pointer;
     left: 0px;
+    border-radius: 25px;
 }
 
 nav ul li {
@@ -55,6 +71,7 @@ nav ul li a:hover{
     margin-bottom: 19px;
 }
 
+
 span{
     color: red;
 
@@ -76,36 +93,46 @@ span{
     border-radius: 5px;
 }
 
-.images{
+.my{
     position: absolute;
-    width: 248px;
-    height: 384px;
+    width: 148px;
+    height: 184px;
     right: 30px;
     top: 129px;
     border-radius: 30px;
 
 }
 
-.images img{
+.images my{
     height: 120%;
     position: absolute;
     left: 50%;
     bottom: 0px;
-    transform: translateX(-30%);
-    transition: bottom 1s, left 1s;
+    transform: translateX(-10%);
+    transition: bottom 2s, left 14s;
 }
+.my{
+    position: absolute;
+    width: 248px;
+    height: 384px;
+    right: -10px;
+    top: 129px;
+    border-radius: 30px;
 
+
+}
 .images:hover .shape{
-    left: 40px;
+    left: 20px;
 }
 
-.images:hover .girl{
-    left: 45%;
+.images:hover .my{
+
+    left: 78%;
 }
 
 .social{
     margin-left: 8%;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .social a{
@@ -525,4 +552,39 @@ section i{
         top: 190vh;
         right: 30px;
     }
+    #contact {
+        height: 550px;
+        top: 900px;
+        background-color: #323040;
+    }
+    .main-section {
+        position: relative;
+        margin-left: 25px;
+        margin-right: 25px;
+        background-color: #323542;
+    }
+    * {
+        font-family: Roboto;
+        text-decoration: none;
+    }
+    user agent stylesheet
+    section {
+        display: block;
+    }
+    html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+    }
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #ea3131;
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 5px;
+    }
+
 }
