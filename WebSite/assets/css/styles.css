@@ -1,7 +1,8 @@
 *{
-    margin: 0;
-    padding: 0;
+
     font-family: sans-serif;
+    text-decoration: none;
+
 }
 #circle{
     position: absolute;
@@ -95,6 +96,7 @@ black{
     border-radius: 5px;
 }
 
+
 .my{
     position: absolute;
     width: 148px;
@@ -106,12 +108,12 @@ black{
 }
 
 .images my{
-    height: 120%;
+    height: 180%;
     position: absolute;
     left: 50%;
     bottom: 0px;
-    transform: translateX(-10%);
-    transition: bottom 2s, left 14s;
+    transform: translateX(-1%);
+    transition: bottom 2s, left 1s;
 }
 .my{
     position: absolute;
@@ -129,7 +131,7 @@ black{
 
 .images:hover .my{
 
-    left: 78%;
+    left: 28%;
 }
 
 .social{
@@ -248,7 +250,7 @@ black{
     flex-shrink: 0;
     flex-basis: 1007px;
     margin-left: 1128px;
- align-content: baseline;
+    align-content: baseline;
     animation: scroll 5s linear alternate;
     animation-iteration-count: infinite;
     animation-delay: 2s;
@@ -418,18 +420,78 @@ black{
 /*========================*/
 .button01{
     position: absolute;
-    top: 4850px;
+    top: 5000px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 106px;
+    width: 156px;
     height: 32px;
-    background-color: #181717;
-    border-radius: 20px;
-    border: 2px solid white;
-    color: white;
+    background-color: #090909;
+    border-radius: 40px;
+    border: 2px solid #e80202;
+    color: #e30909;
+    z-index: 4;
 }
+.button10{
+    position: center;
+    color: red;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 156px;
+    height: 32px;
+    text-decoration: none;
+}
+.a{
+    position: center;
+    background: #000000;
+    padding: 10px 18px;
+    font-weight: bold;
+    color: red;
+    color: #ffffff;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+/*========================*/
+.first{
+    width: 500px;
+    height: 100px;
+    position:static;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition-property: width,height;
+    transition-duration: 1s;
+
+}
+.second{
+    width: 500px;
+    height: 300px;
+    position:static;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition-property: width,height;
+    transition-duration: 1s;
+
+}
+.third{
+    width: 500px;
+    height: 300px;
+    position:static;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition-property: width,height;
+    transition-duration: 1s;
+}
+
 /*========================*/
 
 header{
@@ -589,14 +651,7 @@ section i{
         margin-right: 25px;
         background-color: #323542;
     }
-    * {
-        font-family: Roboto;
-        text-decoration: none;
-    }
-    user agent stylesheet
-    section {
-        display: block;
-    }
+
     html {
         line-height: 1.15;
         -webkit-text-size-adjust: 100%;
