@@ -699,3 +699,41 @@ html {
     border-radius: 5px;
 }
 
+
+/*wqdfwqfd*/
+
+body{
+    background-color: #f3f3f3;
+}
+
+.container{
+    width: 40px;
+    margin: 300px auto;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+
+}
+.dot1{
+    background-color: #09ff00;
+    animation: jump-up 0.6s 0.1s linear infinite;
+}
+.dot2{
+    background-color: #ffd64a;
+    animation: jump-up 0.6s 0.2s linear infinite;
+}
+.dot3{
+    background-color: #ff0000;
+    animation: jump-up 0.6s 0.3s linear infinite;
+}
+
+@Keyframes jump-up{
+    50%{
+        transform: translate(0,15px);
+    }
+}
+
+
