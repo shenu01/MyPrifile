@@ -3,6 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <title>Assignment 10</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
 
+    <style>
+        main{
+            background: url("assets/pictures/sky.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
 
+        body  > main > section:nth-child(1){
+            width: 100vw;
+            height: 200px;
+            position: absolute;
+            bottom: 0;
+            top: 500px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        body > main > section:nth-child(1) > section{
+            width: 300%;
+            height: 100%;
+            display: flex;
+            animation-name: road;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes road {
+            0%{
+                transform: translateX(0%);
+            }
+            100%{
+                transform: translateX(-50%);
+            }
+        }
+
+        body > main > section:nth-child(1) > section > div{
+            width: 100%;
+        }
+
+        body > main > section:nth-child(1) > section > div:nth-child(1){
+            background: url("assets/pictures/road.jpg");
+            background-size: cover;
+        }
+
+        body > main > section:nth-child(1) > section > div:nth-child(2){
+            background: url("assets/pictures/road.jpg");
+            background-size: cover;
+        }
+
+        body > main > section:nth-child(1) > section > div:nth-child(3){
+            background: url("assets/pictures/road.jpg");
+            background-size: cover;
+        }
+
+        body > main > section:nth-child(2){
+            bottom: 0;
+            top: 80px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100vw;
+            height: 220px;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        body > main > section:nth-child(2) > section{
+            width: 300%;
+            height:100%;
+            display: flex;
+            animation-name: city;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+        body  > main > section:nth-child(2) > section > div{
+            width: 100%;
+        }
+
+        body  > main > section:nth-child(2) > section > div:nth-child(1){
+            background: url("assets/pictures/city.png");
+            background-size: cover;
+        }
+
+        body  > main > section:nth-child(2) > section > div:nth-child(2){
+            background: url("assets/pictures/city.png");
+            background-size: cover;
+        }
+
+        body  > main > section:nth-child(2) > section > div:nth-child(3){
+            background: url("assets/pictures/city.png");
+            background-size: cover;
+        }
+
+        @keyframes city {
+
+            100%{
+                transform: translateX(-50%);
+            }
+        }
+
+        body  > main > section:nth-child(3){
+            width: 250px;
+            height: 100px;
+            background: url("assets/pictures/car.png");
+            background-size: cover;
+            position: absolute;
+            bottom: 0;
+            top: 400px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body  > main > section:nth-child(3) > div:nth-child(1){
+            width: 50px;
+            height: 50px;
+            background: url("assets/pictures/wheel.png");
+            background-size: cover;
+            position: absolute;
+            bottom: 0;
+            top: 60px;
+            left: 0;
+            right: 163px;
+            margin: auto;
+            animation-name: wheel1;
+            animation-duration: 1s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes wheel1 {
+
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(240deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        body  > main > section:nth-child(3) > div:nth-child(2){
+            width: 50px;
+            height: 50px;
+            background: url("assets/pictures/wheel.png");
+            background-size: cover;
+            position: absolute;
+            bottom: 0;
+            top: 60px;
+            left: 145px;
+            right: 0;
+            margin: auto;
+            animation-name: wheel2;
+            animation-duration: 1s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes wheel2 {
+
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(240deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<main>
+
+    <!--For road-->
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </section>
+
+    <!--For city-->
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </section>
+
+    <!--For car-->
+    <section>
+        <!--For Wheel-->
+        <div></div>
+        <div></div>
+    </section>
+
+</main>
+
+</body>
 </html>

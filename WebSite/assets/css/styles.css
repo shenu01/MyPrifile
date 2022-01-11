@@ -667,5 +667,35 @@ section i{
         box-shadow: inset 0 0 5px grey;
         border-radius: 5px;
     }
-
 }
+#contact > section:nth-child(4) > form {
+    position: inherit;
+    width: 0%;
+    height: 230px;
+    top: 165px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 18px;
+}
+* {
+    font-family: Roboto;
+    text-decoration: none;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ea3131;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
