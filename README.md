@@ -1,6 +1,5 @@
 #This is My Web Profile Template
-
-
+ 
 
 ![Capture 01](assets/images/Capture%2001.JPG)
 ![Capture 02](assets/images/Capture02.JPG)

@@ -30,7 +30,7 @@ nav{
     position:relative;
     align-items: center;
     justify-content: space-around;
-    background-color: #ff0000;
+    background-color: #e8e8e8;
     width: 100vw;
     height: 50px;
     box-shadow: 2px 4px 3px 2px darkgrey;
@@ -57,7 +57,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: red;
+    color: #ffffff;
 }
 
 .detel{
@@ -76,7 +76,9 @@ span{
     color: red;
 
 }
-
+black{
+    color: #0c0323;
+}
 .detel h4{
     color: #1e3919;
     line-height: 22px;
@@ -142,7 +144,7 @@ span{
 }
 
 .social a:hover{
-    color: red;
+    color: #ff0000;
 }
 
 
@@ -158,6 +160,16 @@ span{
 }
 .About-text{
     width: 550px;
+}
+.button b{
+    background: #050505;
+    padding: 13px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fcfafa;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
 }
 .main{
     width: 1130px;
@@ -403,7 +415,21 @@ span{
 
 
 }
-
+/*========================*/
+.button01{
+    position: absolute;
+    top: 4850px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 106px;
+    height: 32px;
+    background-color: #181717;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+}
 /*========================*/
 
 header{
