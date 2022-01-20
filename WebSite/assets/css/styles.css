@@ -101,7 +101,7 @@ black{
     position: absolute;
     width: 148px;
     height: 184px;
-    right: 30px;
+    right: 0px;
     top: 129px;
     border-radius: 30px;
 
@@ -131,7 +131,7 @@ black{
 
 .images:hover .my{
 
-    left: 28%;
+    left: 82%;
 }
 
 .social{
