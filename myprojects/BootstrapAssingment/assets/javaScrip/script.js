@@ -1,30 +1,37 @@
 document.getElementById("btn-placeOrder").addEventListener("click",function(){
-    document.getElementsByClassName("placeOrder-area")[0].style.display="block"
-    document.getElementsByClassName("customer-area")[0].style.display="none"
-    document.getElementsByClassName("item-area")[0].style.display="none"
-    document.getElementsByClassName("home")[0].style.display="none"
+    document.getElementsByClassName("ManagerCustomer")[0].style.display="none"
+    document.getElementsByClassName("placeOrder")[0].style.display="block"
+    document.getElementsByClassName("Store")[0].style.display="none"
+    document.getElementsByClassName("home-area")[0].style.display="none"
 
-})
+});
 
 document.getElementById("btn-ManageCustomer").addEventListener("click",function(){
-    document.getElementsByClassName("customer-area")[0].style.display="block"
-    document.getElementsByClassName("placeOrder-area")[0].style.display="none"
-    document.getElementsByClassName("item-area")[0].style.display="none"
-    document.getElementsByClassName("home")[0].style.display="none"
+    document.getElementsByClassName("ManagerCustomer")[0].style.display="block"
+    document.getElementsByClassName("placeOrder")[0].style.display="none"
+    document.getElementsByClassName("Store")[0].style.display="none"
+    document.getElementsByClassName("home-area")[0].style.display="none"
 
-})
+});
 
 document.getElementById("btn-ManageStore").addEventListener("click",function(){
-    document.getElementsByClassName("item-area")[0].style.display="block"
-    document.getElementsByClassName("placeOrder-area")[0].style.display="none"
-    document.getElementsByClassName("customer-area")[0].style.display="none"
-    document.getElementsByClassName("home")[0].style.display="none"
+    document.getElementsByClassName("ManagerCustomer")[0].style.display="none"
+    document.getElementsByClassName("placeOrder")[0].style.display="none"
+    document.getElementsByClassName("Store")[0].style.display="block"
+    document.getElementsByClassName("home-area")[0].style.display="none"
 
-})
-document.getElementById("btn-Home").addEventListener("click",function(){
-    document.getElementsByClassName("home")[0].style.display="block"
-    document.getElementsByClassName("item-area")[0].style.display="none"
-    document.getElementsByClassName("placeOrder-area")[0].style.display="none"
-    document.getElementsByClassName("customer-area")[0].style.display="none"
+});
+document.getElementsByClassName("btn-home")[0].addEventListener("click",function(){
+    document.getElementsByClassName("ManagerCustomer")[0].style.display="none"
+    document.getElementsByClassName("placeOrder")[0].style.display="none"
+    document.getElementsByClassName("Store")[0].style.display="none"
+    document.getElementsByClassName("home-area")[0].style.display="block"
 
-})
+});
+document.getElementsByClassName("btn-home")[1].addEventListener("click",function(){
+    document.getElementsByClassName("ManagerCustomer")[0].style.display="none"
+    document.getElementsByClassName("placeOrder")[0].style.display="none"
+    document.getElementsByClassName("Store")[0].style.display="none"
+    document.getElementsByClassName("home-area")[0].style.display="block"
+
+});
