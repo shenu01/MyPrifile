@@ -1,11 +1,16 @@
 body{
-    background-color: rgb(240, 240, 239);
+
 }
-.customer-area{
+.ManagerCustomer {
     display: none;
 }
-.item-area{
+.Store{
     display: none;
+
+}
+.placeOrder{
+    display: none;
+
 }
 .invoice-details{
     position:relative;

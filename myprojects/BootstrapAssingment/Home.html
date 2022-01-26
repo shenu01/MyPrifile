@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
-    <link href="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+
 </head>
 <header>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+
     <div class="container-fluid">
-        <a class="navbar-brand" href="Home.html">
+        <a class="navbar-brand" id="btn-Home01" href="#">
             <img src="assets/Img/logo2.jpg" alt="" width="50" height="44">
         </a>
-        <a class="navbar-brand text-white " href="Home.html">Home</a>
+        <a class="navbar-brand text-white" id="btn-Home" href="#">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="ManageCustomer.html">Manage Customer</a>
+                    <a class="nav-link text-white" id="btn-ManageCustomer" aria-current="page" href="#">Manage Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="ManageStore.html">Manage Storer</a>
+                    <a class="nav-link text-white" id="btn-ManageStore" aria-current="page" href="#">Manage Storer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="PlaceOrder.html">Place Order</a>
+                    <a class="nav-link text-white" id="btn-placeOrder" aria-current="page" href="#">Place Order</a>
                 </li>
 
             </ul>
@@ -37,18 +39,20 @@
         </div>
     </div>
 </nav>
+
 </header>
 <body>
-<section id="ManageCustomePage">
-<section class="container-fluid ">
-    <div class="rounded-3 mt-4 p-3   mb-lg-0 mb-sm-4 mb-4  ">
+
+
+<section class="container-fluid home-area ">
+<div class="rounded-3 mt-4 p-3   mb-lg-0 mb-sm-4 mb-4  ">
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-<center>
+
     <div class="container">
 
         <div class="carousel-item active" data-bs-interval="10000">
@@ -73,8 +77,8 @@
             </div>
         </div>
     </div>
-</center>
-</section>
+
+
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -86,8 +90,7 @@
 </div>
     </div>
 </section>
-<!-- -->
-<section>
+<section class="ManagerCustomer">
     <div class="rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
         <div class="col-12">
             <div class="container-fluid">
@@ -141,70 +144,321 @@
     </div>
 
 
-<div class="table table-striped">
-    <div class="row">
-        <div class="col-12">
-            <section class="container-fluid">
-                <div class="col-12">
-                    <table class="table table-hover mt-2">
-                        <thead class="btn-dark text-white">
-                        <tr>
-                            <th>Customer ID</th>
-                            <th>Customer Name</th>
-                            <th>Customer Age</th>
-                            <th>Customer Address</th>
-                            <th>Phone Number</th>
-                        </tr>
-                        </thead>
-                        <tbody class="table table-hover">
-                        <tr>
-                            <td>C001</td>
-                            <td>Shenu</td>
-                            <td>21Years</td>
-                            <td>Homagama</td>
-                            <td>075 223 0075</td>
-                        </tr>
-                        <tr>
-                            <td>C002</td>
-                            <td>Manee</td>
-                            <td>20Years</td>
-                            <td>Godagama</td>
-                            <td>074 123 1234</td>
-                        </tr>
-
-                        <tr>
-                            <td>C003</td>
-                            <td>Tharu</td>
-                            <td>20Years</td>
-                            <td>Boralasgamuwa</td>
-                            <td>078 332 1234</td>
-                        </tr>
 
 
-                        </tbody>
-                        <tbody>
 
-                        </tbody>
-                    </table>
-                </div>
-            </section>
+    <div class="table table-striped">
+        <div class="row">
+            <div class="col-12">
+                <section class="container-fluid">
+                    <div class="col-12">
+                        <table class="table table-hover mt-2">
+                            <thead class="btn-dark text-white">
+                            <tr>
+                                <th>Customer ID</th>
+                                <th>Customer Name</th>
+                                <th>Customer Age</th>
+                                <th>Customer Address</th>
+                                <th>Phone Number</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table table-hover">
+                            <tr>
+                                <td>C001</td>
+                                <td>Shenu</td>
+                                <td>21Years</td>
+                                <td>Homagama</td>
+                                <td>075 223 0075</td>
+                            </tr>
+                            <tr>
+                                <td>C002</td>
+                                <td>Manee</td>
+                                <td>20Years</td>
+                                <td>Godagama</td>
+                                <td>074 123 1234</td>
+                            </tr>
+
+                            <tr>
+                                <td>C003</td>
+                                <td>Tharu</td>
+                                <td>20Years</td>
+                                <td>Boralasgamuwa</td>
+                                <td>078 332 1234</td>
+                            </tr>
+
+
+                            </tbody>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
-</div>
 </section>
-<!-- -->
-<section>
+<section class="Store">
+    <div class="rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
+        <div class="col-12">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-5">
+
+                        <form>
+                            <div class="mb-2">
+                                <input class="form-control me-2" type="search" placeholder="Search Customer ID" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+
+
+                            </div>
+
+
+                        </form>
+                        <form>
+                            <div class="mb-2">
+                                <label for="customerName" class="form-label">Customer Name</label>
+                                <input type="text" class="form-control" id="customerName" aria-describedby="customerName">
+                            </div>
+
+                        </form>
+                        <form>
+                            <div class="mb-2">
+                                <label for="customerAddress" class="form-label">Customer Address</label>
+                                <input type="text" class="form-control" id="customerAddress" aria-describedby="customerAddress">
+                            </div>
+
+                        </form>
+                        <form>
+                            <div class="mb-2">
+                                <label for="customerEmail" class="form-label">Customer Email</label>
+                                <input type="email" class="form-control" id="customerEmail" aria-describedby="customerEmail">
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                    <div class="col-5">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div>
+                                        <button type="button" class="btn btn-success">Save</button>
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                        <button type="button" class="btn btn-warning">Update</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+
+
+
+    <div class="table table-striped">
+        <div class="row">
+            <div class="col-12">
+                <section class="container-fluid">
+                    <div class="col-12">
+                        <table class="table table-hover mt-2">
+                            <thead class="btn-dark text-white">
+                            <tr>
+                                <th>Item ID</th>
+                                <th>Item Name</th>
+                                <th>Item Description</th>
+                                <th>Item QTY</th>
+                                <th>Item Price</th>
+                            </tr>
+                            </thead>
+                            <tbody class="table table-hover">
+                            <tr>
+                                <td>I001</td>
+                                <td>Prima</td>
+                                <td>Fish Feed</td>
+                                <td>50KG</td>
+                                <td>200.00</td>
+                            </tr>
+                            <tr>
+                                <td>I002</td>
+                                <td>Copeenes</td>
+                                <td>Fish Feed</td>
+                                <td>30KG</td>
+                                <td>1000.00</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>I003</td>
+                                <td>Okiko</td>
+                                <td>Fish Feed</td>
+                                <td>50</td>
+                                <td>1500.00</td>
+                            </tr>
+
+
+                            </tbody>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
 
 </section>
-<!-- -->
-<section>
+<section class="placeOrder">
+    <section>
+        <div class="mt-4">
+            <div class="row gx-2">
+                <div class="col-xl col-lg-5 col-sm-6">
+                    <div class="p-3 rounded-3  bg-dark text-light fw-bolder ">Invoice Details</div>
 
-</section>
-<!-- -->
-<section>
+                    <div class="rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
+                        <div class="row gx-3">
+                            <div class="col">
+                                <div class="mb-lg-4 mb-sm-3 mb-3">
+                                    <label for="orderId" class="form-label">Order ID</label>
+                                    <input type="text" class="form-control" id="orderId" placeholder="O001">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-lg-4 mb-sm-3 mb-3">
+                                    <label for="OrderDate" class="form-label">Date</label>
+                                    <input type="date" class="form-control" id="OrderDate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-2">
+                            <div class="col">
+                                <div class="mb-lg-4 mb-sm-3 mb-3">
+                                    <label for="customerId" class="form-label">Customer ID</label>
+                                    <select class="form-select form-select-ls" id="customerId" aria-label=".form-select-lg example">
+                                        <option selected>C001</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-lg-4 mb-sm-3 mb-3">
+                                    <label for="customerName" class="form-label">Customer</label>
+                                    <input type="text" class="form-control" id="customerName" placeholder="Shenu">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row gx-2">
+                            <div class="mb-lg-4 mb-sm-3 mb-3">
+                                <label for="salary" class="form-label">Email</label>
+                                <input type="text" class="form-control" id="salary" placeholder=".@gmail">
+                            </div>
+                            <div class="mb-lg-4 mb-md-5 ">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="Homagama">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-6">
 
+
+
+                    <div class="col">
+                        <div class="p-3 rounded-3  bg-dark text-light fw-bolder">Payment Details</div>
+
+                        <div class="px-3 rounded-3 mt-4 p-3 border shadow-sm">
+                            <div class="row px-lg-0 px-xxl-4 px-sm-5 mt-0 mt-lg-2 mt-xl-1 mt-xxl-3 ">
+                                <div class="col-5">
+                                    <div class="mb-2 mb-lg-3 mb-xxl-3">
+                                        <label for="total" class="form-label fs-5">Total(RS)</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-2">
+                                        <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="total" value="00000.00">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row px-lg-0 px-sm-5 px-xxl-4">
+                                <div class="col-5">
+                                    <div class="mb-2">
+                                        <label for="subTotal" class="form-label fs-5">Sub Total(RS)</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-2">
+                                        <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="subTotal" value="00000.00">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row gx-3 mt-4">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label for="cash" class="form-label">Cash</label>
+                                        <input type="text" class="form-control" id="cash" placeholder="0000.00">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="mb-3 mb-xxl-4" >
+                                        <label for="discount" class="form-label">Discount</label>
+                                        <input type="number" class="form-control" id="discount" placeholder="10">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="mb-3 mb-xl-5 mb-xxl-4">
+                                    <label for="balance" class="form-label">Balance</label>
+                                    <input type="text" class="form-control" id="balance" placeholder="0000.00">
+                                </div>
+                                <div class="mt-1 d-grid col-6 mt-xl-2 mx-auto">
+                                    <button type="button" class="btn btn-success">Purchase</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <hr class="mt-4 ">
+    <section>
+        <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar " >
+            <table class="table table-hover table-borderless table-striped">
+                <thead class="bg-dark text-light">
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Total(Rs)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">I001</th>
+                    <td>Okiko</td>
+                    <td>1500</td>
+                    <td>02</td>
+                    <td>3000.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">I002</th>
+                    <td>Copense</td>
+                    <td>1000</td>
+                    <td>420Kg</td>
+                    <td>420000.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 </section>
-<!-- -->
 
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 </body>
