@@ -16,7 +16,7 @@ $("#btnSaveOrUpdate").click(function () {
         alert("Customer Updated");
         customer[index].setCustomerName(customerName);
         customer[index].setCustomerAddress(customerAddress);
-        customer[index].setCustomerNumber(setCustomerNumber);
+        customer[index].setCustomerNumber(customerTP);
         loadAllCustomers()
         bindEvent();
         return;
@@ -37,12 +37,13 @@ $("#btnSearch").click(function () {
     if(index!=-1){
         alert("Customer Found");
         $("#txtCuID").val(customer[index].getCustomerId());
-        $("#txtCusName").val(customer[index].getCustomerName());
-        $("#txtCusAddress").val(customer[index].getCustomerAddress());
-        $("#txtCusTP").val(customer[index].getCustomerNumber());
+        $("#txtcuName").val(customer[index].getCustomerName());
+        $("#txtcuadres").val(customer[index].getCustomerAddress());
+        $("#txtcuPNumber").val(customer[index].getCustomerNumber());
         return;
     }
     alert("Customer Not Found");
+    clearFieldsCus();
 });
 
 //Delete Function
@@ -61,9 +62,9 @@ $("#btnDelete").click(function () {
 
 function clearFieldsCus() {
     $("#txtCuID").val('');
-    $("#txtCusName").val('');
-    $("#txtCusAddress").val('');
-    $("#txtCusTP").val('');
+    $("#txtcuName").val('');
+    $("#txtcuadres").val('');
+    $("#txtcuPNumber").val('');
     $("#srcCusID").val('');
 }
 

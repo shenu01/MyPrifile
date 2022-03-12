@@ -332,6 +332,58 @@
             opacity: 50%;
         }
 
+        body > main > section:nth-child(6) {
+            position: relative;
+        }
+
+        body > main > section:nth-child(6)  > section:nth-child(1){
+            width: 500px;
+            height: 16px;
+            position: absolute;
+            top: 100px;
+        }
+
+        body > main > section:nth-child(6) > section:nth-child(1) > h1{
+            color: #ffffff;
+            position: absolute;
+            top: 17px;
+            left: 204px;
+            right: 0;
+            margin: auto;
+            font-size: 40px;
+        }
+
+        body > main > section:nth-child(6) > section:nth-child(1) > h1:hover{
+            color: #000000;
+            cursor: pointer;
+        }
+
+        body > main > section:nth-child(6)  > section:nth-child(2){
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            top: 115px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        body > main > section:nth-child(6)  > section:nth-child(2) > section{
+            width: 25%;
+            border: 3px solid #020202;
+        }
+
+        body > main > section:nth-child(6)  > section:nth-child(2) > section:hover{
+            cursor: pointer;
+            border-color: #ff0101;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 50%;
+        }
+
 
     </style>
 
@@ -453,6 +505,30 @@
         </section>
     </section>
 
+    <section>
+        <!--for heading-->
+         <section><h1>CSS/HTML</h1>
+         </section>
+
+        <!--for projects-->
+        <section>
+            <section>
+                <img src="myprojects/Css/ScreenShots/Capture.JPG" alt="" onclick="window.location.href='myprojects/BootstrapAssingment/Index.html'">
+            </section>
+            <section>
+                <img src="myprojects/Css/ScreenShots/Capture%20kr.JPG" alt=""onclick="window.location.href='myprojects/javaScript/Assignment 02/index.html'">
+            </section>
+            <section>
+                <img src="myprojects/Css/ScreenShots/Capture%20queue.JPG" alt=""onclick="window.location.href='myprojects/javaScript/Assigment 01/index.html'">
+            </section>
+        </section>
+
+
+
+
+
+
+    </section>
 </main>
 <!-------------------------------------------------------------------------->
 </body>
