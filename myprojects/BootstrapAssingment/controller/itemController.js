@@ -1,12 +1,12 @@
 $("#itemSaveOrUpdate").click(function () {
-    //gather customer information
+    //Add & Update Item
     let itemID = $("#txtitemid").val();
     let itemName = $("#txtitemname").val();
     let itemQty= $("#txtqty").val();
     let itemPrice = $("#txtprice").val();
     let nullVal='';
     if(itemID==nullVal||itemName==nullVal||itemQty==nullVal||itemPrice==nullVal){
-        alert("warning-Please Input Data Correctly To Continue..");
+        alert("Warning! Please Input Data Correctly To Continue...");
         return;
     }
     let index=isItemExists(itemID);
@@ -27,7 +27,7 @@ $("#itemSaveOrUpdate").click(function () {
     clearFields();
 });
 
-//Search Function Search bar..
+//Search Function
 $("#btnItemSearch").click(function () {
     //gather Address Or ID
     let property=$("#srcItemProperty").val();

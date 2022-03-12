@@ -1,14 +1,14 @@
 
 
 $("#btnSaveOrUpdate").click(function () {
-    //gather customer information
+    //Add & Update Customer
     let customerID = $("#txtCuID").val();
     let customerName = $("#txtcuName").val();
     let customerAddress = $("#txtcuadres").val();
     let customerTP = $("#txtcuPNumber").val();
     let nullVal='';
     if(customerID==nullVal||customerName==nullVal||customerAddress==nullVal||customerTP==nullVal){
-        alert("warning Please Input Data Correctly To Continue...");
+        alert("Warning! Please Input Data Correctly To Continue...");
         return;
     }
     let index=isExists(customerID);
