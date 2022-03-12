@@ -5,7 +5,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/styles/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <header>
 
@@ -98,32 +98,39 @@
                     <div class="col-5">
                         <form>
                             <div class="mb-2">
-                                <input class="form-control me-2" type="search" placeholder="Search Customer ID" aria-label="Search">
+
+                                <label class="form-label" for="srcCusID">Search Customer</label>
+                                <input class="form-control" id="srcCusID" placeholder="Customer ID,Address" type="text">
 
                             </div>
                         </form>
                         <form>
                             <div class="mb-2">
-                                <label for="customerName" class="form-label">Customer Name</label>
-                                <input type="text" class="form-control" id="customerName" aria-describedby="customerName">
+                                <label for="txtCuID" class="form-label">Customer ID</label>
+                                <input type="text" class="form-control" id="txtCuID" aria-describedby="Customer ID">
                             </div>
                         </form>
                         <form>
                             <div class="mb-2">
-                                <label for="customerAddress" class="form-label">Customer Address</label>
-                                <input type="text" class="form-control" id="customerAddress" aria-describedby="customerAddress">
+                                <label for="txtcuName" class="form-label">Customer Name</label>
+                                <input type="text" class="form-control" id="txtcuName" aria-describedby="customer Name">
                             </div>
                         </form>
                         <form>
                             <div class="mb-2">
-                                <label for="customerEmail" class="form-label">Customer Email</label>
-                                <input type="email" class="form-control" id="customerEmail" aria-describedby="customerEmail">
+                                <label for="txtcuadres" class="form-label">Customer Address</label>
+                                <input type="text" class="form-control" id="txtcuadres" aria-describedby="customer address">
                             </div>
                         </form>
-                        <button type="button" class="btn btn-success">Save</button>
-                        <button type="button" class="btn btn-danger">Delete</button>
-                        <button type="button" class="btn btn-warning">Update</button>
-                    </div>
+                        <form>
+                            <div class="mb-2">
+                                <label for="txtcuPNumber" class="form-label">customer Phone Number</label>
+                                <input type="text" class="form-control" id="txtcuPNumber" aria-describedby="customer PNumber">
+                            </div>
+                        </form>
+                        <button class="btn btn-success" id="btnSaveOrUpdate">Save or Upate</button>
+                        <button class="btn btn-danger" id="btnDelete">Delete</button>
+                     </div>
 
 
                     <div class="col-5">
@@ -131,7 +138,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div>
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                        <button id="btnSearch" button class="btn btn-outline-success" type="submit">Search</button>
 
                                     </div>
                                 </div>
@@ -159,39 +166,13 @@
                             <tr>
                                 <th>Customer ID</th>
                                 <th>Customer Name</th>
-                                <th>Customer Age</th>
                                 <th>Customer Address</th>
                                 <th>Phone Number</th>
                             </tr>
                             </thead>
                             <tbody class="table table-hover">
-                            <tr>
-                                <td></td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                                <td> </td>
-                            </tr>
-                            <tr>
-                                <td>C002</td>
-                                <td>Manee</td>
-                                <td>20Years</td>
-                                <td>Godagama</td>
-                                <td>074 123 1234</td>
-                            </tr>
-
-                            <tr>
-                                <td>C003</td>
-                                <td>Tharu</td>
-                                <td>20Years</td>
-                                <td>Boralasgamuwa</td>
-                                <td>078 332 1234</td>
-                            </tr>
-
-
                             </tbody>
-                            <tbody>
-
+                            <tbody id="customerTable">
                             </tbody>
                         </table>
                     </div>
@@ -206,60 +187,63 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-5">
-
                         <form>
                             <div class="mb-2">
-                                <input class="form-control me-2" type="search" placeholder="Search Customer ID" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-
-
+                                <label class="form-label" for="srcItemProperty">Search Item</label>
+                                <input class="form-control" id="srcItemProperty" placeholder="Item:ID.." type="text">
                             </div>
-
-
                         </form>
                         <form>
                             <div class="mb-2">
-                                <label for="customerName" class="form-label">Customer Name</label>
-                                <input type="text" class="form-control" id="customerName" aria-describedby="customerName">
+                                <label for="txtitemid" class="form-label">Item ID</label>
+                                <input type="text" class="form-control" id="txtitemid" aria-describedby="item id">
                             </div>
-
                         </form>
                         <form>
                             <div class="mb-2">
-                                <label for="customerAddress" class="form-label">Customer Address</label>
-                                <input type="text" class="form-control" id="customerAddress" aria-describedby="customerAddress">
+                                <label for="txtitemname" class="form-label">Item Name</label>
+                                <input type="text" class="form-control" id="txtitemname" aria-describedby="item name">
                             </div>
-
                         </form>
                         <form>
                             <div class="mb-2">
-                                <label for="customerEmail" class="form-label">Customer Email</label>
-                                <input type="email" class="form-control" id="customerEmail" aria-describedby="customerEmail">
+                                <label for="txtqty" class="form-label">Item Quantity</label>
+                                <input type="text" class="form-control" id="txtqty" aria-describedby="qty">
                             </div>
-
                         </form>
+                        <form>
+                            <div class="mb-2">
+                                <label for="txtprice" class="form-label">Unit Price</label>
+                                <input type="text" class="form-control" id="txtprice" aria-describedby="price">
+                            </div>
+                        </form>
+                        <button class="btn btn-success" id="itemSaveOrUpdate">Save or Update</button>
+                        <button class="btn btn-danger" id="itemDelete">Delete</button>
 
-                    </div>
+                     </div>
 
 
                     <div class="col-5">
-                        <div class="container ">
+                        <div class="container-fluid">
                             <div class="row">
                                 <div class="col-12">
                                     <div>
-                                        <button type="button" class="btn btn-success">Save</button>
-                                        <button type="button" class="btn btn-danger">Delete</button>
-                                        <button type="button" class="btn btn-warning">Update</button>
+                                        <button id="btnItemSearch" button class="btn btn-outline-success" type="submit">Search</button>
+
+
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
-        </div></div>
+
+        </div>
+    </div>
+
+
 
 
 
@@ -273,39 +257,14 @@
                             <tr>
                                 <th>Item ID</th>
                                 <th>Item Name</th>
-                                <th>Item Description</th>
-                                <th>Item QTY</th>
-                                <th>Item Price</th>
+                                <th>Item Quantity</th>
+                                <th>Unit Price</th>
+
                             </tr>
                             </thead>
                             <tbody class="table table-hover">
-                            <tr>
-                                <td>I001</td>
-                                <td>Prima</td>
-                                <td>Fish Feed</td>
-                                <td>50KG</td>
-                                <td>200.00</td>
-                            </tr>
-                            <tr>
-                                <td>I002</td>
-                                <td>Copeenes</td>
-                                <td>Fish Feed</td>
-                                <td>30KG</td>
-                                <td>1000.00</td>
-                            </tr>
-
-
-                            <tr>
-                                <td>I003</td>
-                                <td>Okiko</td>
-                                <td>Fish Feed</td>
-                                <td>50</td>
-                                <td>1500.00</td>
-                            </tr>
-
-
                             </tbody>
-                            <tbody>
+                            <tbody id="itemTable">
 
                             </tbody>
                         </table>
@@ -314,7 +273,6 @@
             </div>
         </div>
     </div>
-
 </section>
 <section class="placeOrder">
     <section>
@@ -372,52 +330,53 @@
                     <div class="mt-4">
                         <div class="row gx-2">
                             <div class="col-xl col-lg-5 col-sm-6">
-                                <div class="p-3 rounded-3  bg-dark text-light fw-bolder ">Invoice Details</div>
+                                <div class="p-3 rounded-3  bg-dark text-light fw-bolder ">Item Details</div>
 
-                                <div class="rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
+                                <div class="px-3 rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
                                     <div class="row gx-3">
                                         <div class="col">
-                                            <div class="mb-lg-4 mb-sm-3 mb-3">
-                                                <label for="orderId" class="form-label">Order ID</label>
-                                                <input type="text" class="form-control" id="orderId" placeholder="O001">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-lg-4 mb-sm-3 mb-3">
-                                                <label for="OrderDate" class="form-label">Date</label>
-                                                <input type="date" class="form-control" id="OrderDate">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row gx-2">
-                                        <div class="col">
-                                            <div class="mb-lg-4 mb-sm-3 mb-3">
-                                                <label for="customerId" class="form-label">Customer ID</label>
-                                                <select class="form-select form-select-ls" id="customerId" aria-label=".form-select-lg example">
-                                                    <option selected>C001</option>
+                                            <div class="mb-4">
+                                                <label for="cmbItemId" class="form-label">Item ID</label>
+                                                <select class="form-select form-select-ls" id="cmbItemId"
+                                                        aria-label=".form-select-lg example">
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col">
-                                            <div class="mb-lg-4 mb-sm-3 mb-3">
-                                                <label for="customerName" class="form-label">Customer</label>
-                                                <input type="text" class="form-control" id="customerName" placeholder="Shenu">
+                                            <div class="mb-4">
+                                                <label for="txtOrderItemName" class="form-label">Item</label>
+                                                <input type="text" class="form-control" id="txtOrderItemName" placeholder="Soap"
+                                                       disabled>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row gx-2">
-                                        <div class="mb-lg-4 mb-sm-3 mb-3">
-                                            <label for="salary" class="form-label">Email</label>
-                                            <input type="text" class="form-control" id="salary" placeholder=".@gmail">
+                                    <div class="row gx-3">
+                                        <div class="col">
+                                            <div class="mb-4">
+                                                <label for="txtOrderItemPrice" class="form-label">Price</label>
+                                                <input type="text" class="form-control" id="txtOrderItemPrice"
+                                                       placeholder="0000.00" disabled>
+                                            </div>
                                         </div>
-                                        <div class="mb-lg-4 mb-md-5 ">
-                                            <label for="address" class="form-label">Address</label>
-                                            <input type="text" class="form-control" id="address" placeholder="Homagama"  disabled>
+                                        <div class="col">
+                                            <div class="mb-5">
+                                                <label for="txtOrderQtyOnHand" class="form-label">QtyOnHand</label>
+                                                <input type="number" class="form-control" id="txtOrderQtyOnHand"
+                                                       placeholder="10" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-lg-2 mb-md-2 mb-sm-5">
+                                            <label for="txtOrderQty" class="form-label">Order Quantity</label>
+                                            <input type="number" class="form-control" id="txtOrderQty" placeholder="00">
+                                        </div>
+                                        <div class="mt-5 d-grid  col-6 mx-auto">
+                                            <button id="btnAddItem" type="button" class="btn btn-primary" disabled>Add Item</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                 <div class="col-lg col-sm-6">
 
                     <div class="col">
@@ -493,20 +452,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">I001</th>
-                    <td>Okiko</td>
-                    <td>1500</td>
-                    <td>02</td>
-                    <td>3000.00</td>
-                </tr>
-                <tr>
-                    <th scope="row">I002</th>
-                    <td>Copense</td>
-                    <td>1000</td>
-                    <td>420Kg</td>
-                    <td>420000.00</td>
-                </tr>
+
                 </tbody>
             </table>
         </div>
@@ -515,5 +461,18 @@
 </section>
 <script src="assets/javaScrip/script.js"></script>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+
+<script src="controller/OrderDetailsController.js"></script>
+
+<script src="db/db.js"></script>
+<script src="controller/CustomerController.js"></script>
+<script src="controller/itemController.js"></script>
+<script src="controller/OrderController.js"></script>
+
+<script src="model/Customer.js"></script>
+<script src="model/item.js"></script>
+<script src="model/order.js"></script>
+<script src="model/OrderDetails.js"></script>
 </body>
 </html>
