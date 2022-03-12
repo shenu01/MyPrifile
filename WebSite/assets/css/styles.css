@@ -125,6 +125,16 @@ black{
 
 
 }
+.form{
+    position: absolute;
+    width: 248px;
+    height: 84px;
+    right: -10px;
+    top: 2700px;
+    border-radius: 30px;
+
+}
+
 .images:hover .shape{
     left: 20px;
 }
