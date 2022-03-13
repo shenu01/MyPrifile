@@ -1,0 +1,117 @@
+//Search Customer And Fill..
+$("#btnSearchCus").click(function () {
+    if($("#txtCusIDForSearch").val()==''){
+        alert("Please Add Data to Search");
+        return;
+    }
+    searchCustomerById($("#txtCusIDForSearch").val());
+});
+
+//Search item and fill
+$("#btnSearchItem").click(function () {
+    if($("#txtItemCodeForSearch").val()==''){
+        alert("Please Add Data to Search");
+        return;
+    }
+    serchItemById($("#txtItemCodeForSearch").val());
+});
+function serchItemById(Itid) {
+    for(let i=0;i<item.length;i++){
+        if(item[i].getItemId()==Itid){
+            $("#txtItemNameResult").val(item[i].getItemName());
+            $("#txtItemPriceResult").val(item[i].getItemPrice());
+            $("#txtItemQtyResult").val(item[i].getItemQty());
+
+            return;
+        }
+    }
+}
+
+function searchCustomerById(id) {
+    for(let i=0;i<customer.length;i++){
+        if(customer[i].getCustomerId()==id){
+            $("#txtCusNameResult").val(customer[i].getCustomerName());
+            $("#txtCusAddressResult").val(customer[i].getCustomerAddress());
+            $("#txtCusSalaryResult").val(customer[i].getCustomerNumber());
+            return;
+        }
+    }
+}
+
+
+
+//Fill Table With Items..
+let tempTotal=0;
+let tempSubTotal=0;
+$("#btnAddItem").click(function () {
+    //Logic For Add Item To Table.
+    let ItemTot=$("#txtItemPriceResult").val() * $("#txtQtyForAdd").val();
+    tempTotal=tempTotal+ItemTot;
+    let rowItem = `<tr><td>${$("#txtItemCodeForSearch").val()}</td><td>${$("#txtItemNameResult").val()}</td><td>${$("#txtItemPriceResult").val()}</td><td>${$("#txtQtyForAdd").val()}</td><td>${ItemTot}</td></tr>`;
+    $("#itemTableForViewOnOrder").append(rowItem);
+    $("#txtDisplayTotal").text('Total: '+tempTotal+'/=');
+    let newQtyForDb=$("#txtItemQtyResult").val()-$("#txtQtyForAdd").val();
+    $("#txtItemQtyResult").val(newQtyForDb);
+    let indexForReduce=isItemExists($("#txtItemCodeForSearch").val());
+    if(indexForReduce!=-1){
+        item[indexForReduce].setItemQty(newQtyForDb);
+        loadAllItem();
+        bindEventItemTable()
+        return;
+    }
+});
+//Purchase Btn
+$("#btnPurchase").click(function () {
+    if($("#txtOrderId").val()!=''&&$("#txtOrderDate").val()!=''&&$("#txtCusIDForSearch").val()!=''&&$("#txtItemCodeForSearch").val()!=''&&$("#txtGivenCash").val()!=''){
+        let OrderIDdb=$("#txtOrderId").val();
+        let OrderDatedb=$("#txtOrderDate").val();
+        let OrderCustID=$("#txtCusIDForSearch").val();
+        let OrderPrice=tempSubTotal;
+        if(isOrderExists(OrderIDdb)){
+            alert("Order_ID Already Exists");
+            return;
+        }
+        //adding to DB
+        if (confirm("Confirm Order For:"+OrderCustID+" Order Price: "+tempSubTotal+"/=")) {
+            let o1=new Order(OrderIDdb,OrderDatedb,OrderCustID,OrderPrice);
+            order.push(o1);
+        } else {
+            alert("Order Dismissed");
+            return;
+        }
+    }
+    else{
+        alert("Please Insert Correct Data..");
+        return;
+    }
+});
+$("#btnRefresh").click(function () {
+    newOrder();
+});
+
+function isOrderExists(o_id){
+    for(let i=0;i<order.length;i++) {
+        if(order[i].getOrderId()==o_id){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
+function newOrder() {
+    $("#itemTableForViewOnOrder>tr").remove();
+    $("#txtOrderId").val('');
+    $("#txtOrderDate").val('');
+    $("#txtCusIDForSearch").val('');
+    $("#txtCusNameResult").val('');
+    $("#txtCusAddressResult").val('');
+    $("#txtCusSalaryResult").val('');
+    $("#txtItemCodeForSearch").val('');
+    $("#txtItemNameResult").val('');
+    $("#txtItemQtyResult").val('');
+    $("#txtItemPriceResult").val('');
+    $("#txtGivenCash").val('');
+    $("#txtDiscount").val('');
+    $("#txtIdBalance").val('');
+}

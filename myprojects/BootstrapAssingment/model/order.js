@@ -1,4 +1,4 @@
-function OrderDTO(oid,odate,OcustID,price) {
+function Order(oid,odate,OcustID,price) {
     var __Oid=oid;
     var __Odate=odate;
     var __OcustID=OcustID;

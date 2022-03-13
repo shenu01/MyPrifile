@@ -1,3 +1,91 @@
+clearItemValidation();
+
+function clearItemValidation() {
+    $("#validationTextItemId").css('display','none');
+    $("#validationTextItemName").css('display','none');
+    $("#validationTextItemQty").css('display','none');
+    $("#validationTextItemPrice").css('display','none');
+}
+
+
+
+//Validation-Item.Id
+let RegExItemID=/^(I00-)[0-9]{3,4}$/;
+$("#txtitemid").keyup(function () {
+    if($("#txtitemid").val()==''){
+        $("#validationTextItemId").css('display','none');
+        $("#txtitemid").css('border','1px solid #ced4da');
+        return;
+    }
+    let input =$("#txtitemid").val();
+    if(RegExItemID.test(input)){
+        $("#txtitemid").css('border','2px solid green');
+        $("#validationTextItemId").css('display','none');
+    }
+    else{
+        $("#txtitemid").css('border','2px solid red');
+        $("#validationTextItemId").css('display','block');
+    }
+});
+
+//Validation-Item.Name
+let RegExItemName=/^[A-z]{4,100}$/;
+$("#txtitemname").keyup(function () {
+    if($("#txtitemname").val()==''){
+        $("#validationTextItemName").css('display','none');
+        $("#txtitemname").css('border','1px solid #ced4da');
+        return;
+    }
+    let input =$("#txtitemname").val();
+    if(RegExItemName.test(input)){
+        $("#txtitemname").css('border','2px solid green');
+        $("#validationTextItemName").css('display','none');
+    }
+    else{
+        $("#txtitemname").css('border','2px solid red');
+        $("#validationTextItemName").css('display','block');
+    }
+});
+
+//Validation-Item.Qty
+let RegExItemQty=/^[0-9]{1,5}$/;
+$("#txtqty").keyup(function () {
+    if($("#txtqty").val()==''){
+        $("#validationTextItemQty").css('display','none');
+        $("#txtqty").css('border','1px solid #ced4da');
+        return;
+    }
+    let input =$("#txtqty").val();
+    if(RegExItemQty.test(input)){
+        $("#txtqty").css('border','2px solid green');
+        $("#validationTextItemQty").css('display','none');
+    }
+    else{
+        $("#txtqty").css('border','2px solid red');
+        $("#validationTextItemQty").css('display','block');
+    }
+});
+
+//Validation-Item.Price
+let RegExItemPrice=/^[0-9]{1,9}(.)[0-9]{2}$/;
+$("#txtprice").keyup(function () {
+    if($("#txtprice").val()==''){
+        $("#validationTextItemPrice").css('display','none');
+        $("#txtprice").css('border','1px solid #ced4da');
+        return;
+    }
+    let input =$("#txtprice").val();
+    if(RegExItemPrice.test(input)){
+        $("#txtprice").css('border','2px solid green');
+        $("#validationTextItemPrice").css('display','none');
+    }
+    else{
+        $("#txtprice").css('border','2px solid red');
+        $("#validationTextItemPrice").css('display','block');
+    }
+});
+
+//-----------------------------------------------------------------------
 $("#itemSaveOrUpdate").click(function () {
     //Add & Update Item
     let itemID = $("#txtitemid").val();

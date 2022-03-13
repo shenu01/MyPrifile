@@ -1,3 +1,87 @@
+clearValidation();
+function clearValidation() {
+    $("#validationTextId").css('display','none');
+    $("#validationTextName").css('display','none');
+    $("#validationTextAddress").css('display','none');
+    $("#validationTextTp").css('display','none');
+}
+
+//Validation-Customer.Id
+let RegExCusID=/^(C00-)[0-9]{3,4}$/;
+$("#txtCuID").keyup(function () {
+    if($("#txtCuID").val()==''){
+        $("#validationTextId").css('display','none');
+        $("#txtCuID").css('border','1px solid #ced4da');
+        return;
+    }
+    let input =$("#txtCuID").val();
+    if(RegExCusID.test(input)){
+        $("#txtCuID").css('border','2px solid green');
+        $("#validationTextId").css('display','none');
+    }
+    else{
+        $("#txtCuID").css('border','2px solid red');
+        $("#validationTextId").css('display','block');
+    }
+});
+//Validation-Customer.Name
+let RegExCusName=/^[A-z]{5,10}$/;
+$("#txtcuName").keyup(function () {
+    if($("#txtcuName").val()==''){
+        $("#validationTextName").css('display','none');
+        $("#txtcuName").css('border','1px solid #ced4da');
+        return;
+    }
+    let input =$("#txtcuName").val();
+    if(RegExCusName.test(input)){
+        $("#txtcuName").css('border','2px solid green');
+        $("#validationTextName").css('display','none');
+    }
+    else{
+        $("#txtcuName").css('border','2px solid red');
+        $("#validationTextName").css('display','block');
+    }
+});
+
+//Validation-Customer.address
+let RegExCusAddress=/^[A-z]{4,100}$/;
+$("#txtcuadres").keyup(function () {
+    if($("#txtcuadres").val()==''){
+        $("#validationTextAddress").css('display','none');
+        $("#txtcuadres").css('border','1px solid #ced4da');
+        return;
+    }
+    let input =$("#txtcuadres").val();
+    if(RegExCusAddress.test(input)){
+        $("#txtcuadres").css('border','2px solid green');
+        $("#validationTextAddress").css('display','none');
+    }
+    else{
+        $("#txtcuadres").css('border','2px solid red');
+        $("#validationTextAddress").css('display','block');
+    }
+});
+
+//Validation-Customer.TP
+let RegExCusTP=/^(07)[0-9]{8,9}$/;
+$("#txtcuPNumber").keyup(function () {
+    if($("#txtcuPNumber").val()==''){
+        $("#validationTextTp").css('display','none');
+        $("#txtcuPNumber").css('border','1px solid #ced4da');
+        return;
+    }
+    let input =$("#txtcuPNumber").val();
+    if(RegExCusTP.test(input)){
+        $("#txtcuPNumber").css('border','2px solid green');
+        $("#validationTextTp").css('display','none');
+    }
+    else{
+        $("#txtcuPNumber").css('border','2px solid red');
+        $("#validationTextTp").css('display','block');
+    }
+});
+
+//----------------------------------------------------------------------------------------
 
 
 $("#btnSaveOrUpdate").click(function () {
@@ -30,6 +114,8 @@ $("#btnSaveOrUpdate").click(function () {
 });
 
 //Search Function Search bar..
+
+
 $("#btnSearch").click(function () {
     //gather Address Or ID
     let property=$("#srcCusID").val();
@@ -105,4 +191,11 @@ function bindEvent() {
         $("#txtCusAddress").val(CustomerAddress);
         $("#txtCusTP").val(CustomerTP);
     });
+}
+function searchCustomer(id) {
+    for (var i = 0; i < customer.length; i++) {
+        if (customer[i].getCustomerId() == id) {
+            return customer[i];
+        }
+    }
 }

@@ -108,24 +108,28 @@
                             <div class="mb-2">
                                 <label for="txtCuID" class="form-label">Customer ID</label>
                                 <input type="text" class="form-control" id="txtCuID" aria-describedby="Customer ID">
+                                <p style="font-size: 10px;color: #ff253a" id="validationTextId" >Input Format-C00-001</p>
                             </div>
                         </form>
                         <form>
                             <div class="mb-2">
                                 <label for="txtcuName" class="form-label">Customer Name</label>
                                 <input type="text" class="form-control" id="txtcuName" aria-describedby="customer Name">
+                                <p style="font-size: 10px;color: #ff253a" id="validationTextName" >Input Format-Shenu</p>
                             </div>
                         </form>
                         <form>
                             <div class="mb-2">
                                 <label for="txtcuadres" class="form-label">Customer Address</label>
                                 <input type="text" class="form-control" id="txtcuadres" aria-describedby="customer address">
+                                <p style="font-size: 10px;color: #ff253a" id="validationTextAddress" >Input Format-Homagama</p>
                             </div>
                         </form>
                         <form>
                             <div class="mb-2">
                                 <label for="txtcuPNumber" class="form-label">customer Phone Number</label>
                                 <input type="text" class="form-control" id="txtcuPNumber" aria-describedby="customer PNumber">
+                                <p style="font-size: 10px;color: #ff253a" id="validationTextTp" >Input Format-0752230075</p>
                             </div>
                         </form>
                         <button class="btn btn-success" id="btnSaveOrUpdate">Save or Upate</button>
@@ -191,30 +195,34 @@
                             <div class="mb-2">
                                 <label class="form-label" for="srcItemProperty">Search Item</label>
                                 <input class="form-control" id="srcItemProperty" placeholder="Item ID " type="text">
-                            </div>
+                             </div>
                         </form>
                         <form>
                             <div class="mb-2">
                                 <label for="txtitemid" class="form-label">Item ID</label>
                                 <input type="text" class="form-control" id="txtitemid" aria-describedby="item id">
+                                <p style="font-size: 10px;color: #ff253a" id="validationTextItemId" >Input Format-I00-001</p>
                             </div>
                         </form>
                         <form>
                             <div class="mb-2">
                                 <label for="txtitemname" class="form-label">Item Name</label>
                                 <input type="text" class="form-control" id="txtitemname" aria-describedby="item name">
+                                <p style="font-size: 10px;color: #ff253a" id="validationTextItemName" >Input Format-Food</p>
                             </div>
                         </form>
                         <form>
                             <div class="mb-2">
                                 <label for="txtqty" class="form-label">Item Quantity</label>
-                                <input type="text" class="form-control" id="txtqty" aria-describedby="qty">
+                                <input type="text" class="form-control" id="txtprice" aria-describedby="qty">
+                                <p style="font-size: 10px;color: #ff253a" id="validationTextItemQty" >Input Format-10</p>
                             </div>
                         </form>
                         <form>
                             <div class="mb-2">
                                 <label for="txtprice" class="form-label">Unit Price</label>
-                                <input type="text" class="form-control" id="txtprice" aria-describedby="price">
+                                <input type="text" class="form-control" id="txtqty" aria-describedby="price">
+                                <p style="font-size: 10px;color: #ff253a" id="validationTextItemPrice" >Input Format-250.00</p>
                             </div>
                         </form>
                         <button class="btn btn-success" id="itemSaveOrUpdate">Save or Update</button>
@@ -280,51 +288,63 @@
             <div class="row gx-2">
                 <div class="col-xl col-lg-5 col-sm-6">
                     <div class="p-3 rounded-3  bg-dark text-light fw-bolder ">Invoice Details</div>
+                    <div class="col">
+                        <caption>Order ID:</caption>
+                        <form>
+                            <input class="form-control " id="txtOrderId" type="text" placeholder="Format: O00-001">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <div class="mb-lg-4 mb-sm-3 mb-3">
+                            <label for="txtOrderDate" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="txtOrderDate">
+                        </div>
+                    </div>
 
-                    <div class="rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm">
-                        <div class="row gx-3">
-                            <div class="col">
-                                <div class="mb-lg-4 mb-sm-3 mb-3">
-                                    <label for="orderId" class="form-label">Order ID</label>
-                                    <input type="text" class="form-control" id="orderId" placeholder="O001">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="mb-lg-4 mb-sm-3 mb-3">
-                                    <label for="OrderDate" class="form-label">Date</label>
-                                    <input type="date" class="form-control" id="OrderDate">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gx-2">
-                            <div class="col">
-                                <div class="mb-lg-4 mb-sm-3 mb-3">
-                                    <label for="customerId" class="form-label">Customer ID</label>
-                                    <select class="form-select form-select-ls" id="customerId" aria-label=".form-select-lg example">
-                                        <option selected>C001</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="mb-lg-4 mb-sm-3 mb-3">
-                                    <label for="customerName" class="form-label">Customer Name</label>
-                                    <input type="text" class="form-control" id="customerName" placeholder="Shenu">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row gx-2">
-                            <div class="mb-lg-4 mb-sm-3 mb-3">
-                                <label for="salary" class="form-label">Phone No.</label>
-                                <input type="text" class="form-control" id="salary" placeholder="07X XXXXXXX">
-                            </div>
-                            <div class="mb-lg-4 mb-md-5 ">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="Homagama"  disabled>
-                            </div>
-                        </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col">
+                        <caption>Customer_ID:</caption>
+                        <form>
+                            <input class="form-control " type="text" id="txtCusIDForSearch" placeholder="Format: C00-001">
+                        </form>
                     </div>
                 </div>
 
+
+                <div class="row">
+                    <div class="col">
+                        <caption>Name:</caption>
+                        <form>
+                            <input class="form-control " type="text" disabled id="txtCusNameResult">
+                        </form>
+                    </div>
+                    <div class="col">
+                        <caption>Telephone:</caption>
+                        <form>
+                            <input class="form-control " type="text" disabled id="txtCusSalaryResult">
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <caption>Address:</caption>
+                        <form>
+                            <input class="form-control " type="text" disabled id="txtCusAddressResult">
+                            <button class="btn bg-danger mt-4" id="btnRefresh">New Order(Clear)</button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <button class="btn bg-light mt-4" id="btnSearchCus">Search Customer</button>
+                    </div>
+                </div>
+
+    </section>
+    </div>
 
                 <section>
                     <div class="mt-4">
@@ -336,43 +356,41 @@
                                     <div class="row gx-3">
                                         <div class="col">
                                             <div class="mb-4">
-                                                <label for="cmbItemId" class="form-label">Item ID</label>
-                                                <select class="form-select form-select-ls" id="cmbItemId"
-                                                        aria-label=".form-select-lg example">
-                                                </select>
+                                                <caption>Item Id</caption>
+                                                <input class="form-control " type="text" placeholder="Format:I00-001" id="txtItemCodeForSearch">
+
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-4">
-                                                <label for="txtOrderItemName" class="form-label">Item Name</label>
-                                                <input type="text" class="form-control" id="txtOrderItemName" placeholder="food"
-                                                       disabled>
+                                                 <caption>Item Name:</caption>
+                                                <input class="form-control" disabled type="text" id="txtItemNameResult">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row gx-3">
                                         <div class="col">
                                             <div class="mb-4">
-                                                <label for="txtOrderItemPrice" class="form-label">Item Price</label>
-                                                <input type="text" class="form-control" id="txtOrderItemPrice"
-                                                       placeholder="0000.00" disabled>
+                                                <caption>Item Price:</caption>
+                                                <input class="form-control " type="text" id="txtItemPriceResult" disabled>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-5">
-                                                <label for="txtOrderQtyOnHand" class="form-label">QtyOnHand</label>
-                                                <input type="number" class="form-control" id="txtOrderQtyOnHand"
-                                                       placeholder="10" disabled>
+                                                <caption>QtyOnH:</caption>
+                                                <input class="form-control " type="text" id="txtItemQtyResult" disabled>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="mb-lg-2 mb-md-2 mb-sm-5">
-                                            <label for="txtOrderQty" class="form-label">Order Quantity</label>
-                                            <input type="number" class="form-control" id="txtOrderQty" placeholder="00">
+                                            <caption>Order QTY:</caption>
+                                            <input class="form-control " type="text" placeholder="Format: 20" id="txtQtyForAdd">
                                         </div>
+                                        <button class="btn btn-dark mt-4" id="btnSearchItem">Search Item</button>
                                         <div class="mt-5 d-grid  col-6 mx-auto">
-                                            <button id="btnAddItem" type="button" class="btn btn-primary" disabled>Add Item</button>
+
+                                            <button id="btnAddItem" type="button" class="btn btn-primary"  >Add Item</button>
                                         </div>
                                     </div>
                                 </div>
@@ -386,12 +404,11 @@
                             <div class="row px-lg-0 px-xxl-4 px-sm-5 mt-0 mt-lg-2 mt-xl-1 mt-xxl-3 ">
                                 <div class="col-5">
                                     <div class="mb-2 mb-lg-3 mb-xxl-3">
-                                        <label for="total" class="form-label fs-5">Total(RS)</label>
+                                        <h4 class="text-dark" id="txtDisplayTotal">Total: Rs.0.00/=</h4>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-2">
-                                        <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="total" value="00000.00"   >
                                     </div>
                                 </div>
                             </div>
@@ -399,12 +416,11 @@
                             <div class="row px-lg-0 px-sm-5 px-xxl-4">
                                 <div class="col-5">
                                     <div class="mb-2">
-                                        <label for="subTotal" class="form-label fs-5">Sub Total(RS)</label>
+                                        <h4 class="text-dark" id="txtDisplaySubTotal">Sub Total: Rs.0.00/=</h4>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-2">
-                                        <input type="number" readonly class="form-control p-1 fs-6 fw-bolder " id="subTotal" value="00000.00">
                                     </div>
                                 </div>
                             </div>
@@ -412,24 +428,24 @@
                             <div class="row gx-3 mt-4">
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label for="cash" class="form-label">Cash</label>
-                                        <input type="text" class="form-control" id="cash" placeholder="0000.00">
+                                        <label for="txtGivenCash" class="form-label">Cash</label>
+                                        <input type="text" class="form-control" id="txtGivenCash" placeholder="0000.00">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="mb-3 mb-xxl-4" >
-                                        <label for="discount" class="form-label">Discount</label>
-                                        <input type="number" class="form-control" id="discount" placeholder="10">
+                                        <label for="txtDiscount" class="form-label">Discount</label>
+                                        <input type="number" class="form-control" id="txtDiscount" placeholder="10">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="mb-3 mb-xl-5 mb-xxl-4">
-                                    <label for="balance" class="form-label">Balance</label>
-                                    <input type="text" class="form-control" id="balance" placeholder="0000.00">
+                                    <label for="txtIdBalance" class="form-label">Balance</label>
+                                    <input type="text" class="form-control" id="txtIdBalance" placeholder="0000.00">
                                 </div>
                                 <div class="mt-1 d-grid col-6 mt-xl-2 mx-auto">
-                                    <button type="button" class="btn btn-success">Purchase</button>
+                                    <button type="button" class="btn btn-success"id="btnPurchase">Purchase</button>
                                 </div>
                             </div>
                         </div>
@@ -437,6 +453,7 @@
                 </div>
             </div>
     </section>
+
 
     <hr class="mt-4 ">
     <section>
@@ -451,6 +468,8 @@
                     <th scope="col">Total(Rs)</th>
                 </tr>
                 </thead>
+                <tbody id="itemTableForViewOnOrder">
+                </tbody>
                 <tbody>
 
                 </tbody>
