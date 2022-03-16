@@ -18,7 +18,7 @@
 * [Mockup URL](https://www.figma.com/file/5rrcIOB3EmX4HqV0qX3ceW/MyWebSite?node-id=0%3A1)
 
  ##
-* [GitHub Pages URL](https://shenu01.github.io/MyProfile/)
+* [GitHub Pages URL](https://shenu01eeee.github.io/MyProfile/)
 
 * [000WebHost URL](https://shenu01.000webhostapp.com/)
 ##
